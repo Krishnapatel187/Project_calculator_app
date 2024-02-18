@@ -2,37 +2,43 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1{
+  font-size: 50px;
+ color:crimson;
+}
+.app_container{
+  width: 400px !important;
+  height: 400px !important;
+  font-size: larger;
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calculator {
+  display: grid !important;
+  grid-template-columns: repeat(4,100px);
+  left: 50%;
+  top: 35%;
+  position: absolute;
+  transform: translate(-50%, -12%); /* Centers the calculator on screen */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  height: 100px;
+  font-size: larger;
+  background-color: white;
+  border: 1px solid rgb(141, 155, 168);
 }
 
-.App-link {
-  color: #61dafb;
+button.oprator {
+  background-color:  lightgray;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  height: 60px;
+  font-size: 30px;
+  text-align: right;
+  border: 1px solid rgb(141, 155, 168);
+  padding-right: 10px;
+  padding-top: 5px;
 }
